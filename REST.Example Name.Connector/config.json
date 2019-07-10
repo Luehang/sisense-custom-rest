@@ -1,0 +1,43 @@
+{
+	"Settings": {
+		"Provider": "rest.Example Name.connector",
+		"DisplayName": "Devices Statuses",
+		"MaxDocs": 100,
+		"FetchSize": 1000,
+		"Parameters": {},
+		"UIParameters": {}
+	},
+	"Credentials": {
+		"Auth": {
+			"Name":"Example Name",
+			"Public": "False",
+			"Schema": "Http",
+			"Method": "GET",
+			"Base": "",
+			"Path": "",
+			"Headers": {
+				"Authorization": ""
+			},
+			"PathParameters": [],
+			"QueryParameters": {
+				"access_token": "query"
+			}
+		},
+		"Body": {}
+	},
+	"Tables": [
+		{
+			"Name": "ExampleName",
+			"Public": "True",
+			"Schema": "Http",
+			"Method": "GET",
+			"Base": "http://localhost:8500",
+			"Path": "/api/v1/endpoint",
+			"Headers": {},
+			"PathParameters": [],
+			"QueryParameters": {
+				"access_token": "query"
+			}
+		}
+	]
+}
